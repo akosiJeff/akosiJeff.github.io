@@ -1,0 +1,29 @@
+*{
+	margin:0px;
+}
+body{
+	background-image: url('https://stmed.net/sites/default/files/dark-blue-wallpapers-25191-7077071.jpg');
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+ul{
+	background: green;
+	display: flex;
+}
+li{
+	padding: 10px;
+	list-style: none;
+}
+li:hover{
+	background: lightblue;
+}
+footer{
+	background: #008080;
+	padding: 20px;
+	text-align: center;
+
+}
+a:hover{
+	color: red;
+}
