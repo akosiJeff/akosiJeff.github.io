@@ -74,23 +74,7 @@
 		    setTimeout(carousel, 4000); // Change image every 2 seconds
 
 		}
-		var connection = new ActiveXObject("http://localhost/phpmyadmin/db_structure.php?db=it32b.Connection") ;
-
-var connectionstring="Data Source=<server>;Initial Catalog=<catalog>;User ID=<user>;Password=<password>;Provider=SQLOLEDB";
-
-connection.Open(connectionstring);
-var rs = new ActiveXObject("ADODB.Recordset");
-
-rs.Open("SELECT * FROM table", connection);
-rs.MoveFirst
-while(!rs.eof)
-{
-   document.write(rs.fields(1));
-   rs.movenext;
-}
-
-rs.close;
-connection.close; 
+		
 	</script>
 </body>
 </html>
