@@ -1,48 +1,65 @@
 <!DOCTYPE html>
 <html>
-<title>Alliance in Motion Global</title>
 <head>
+	<title>Aim Global</title>
+	<link rel="stylesheet" type="text/css" href="mycs.css">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" type="text/css" href="Des.css">
-	<link rel="icon" href="data:image/png;base64,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">
 </head>
 <body>
-	<div class="first">
-		<ul>
-			<li><a href="https://akosijeff.github.io/aimglobaljgm.html">Home</a></li>
-			<li><a href="https://akosijeff.github.io/Products.html">Products</a></li>
-			<li>Team</li>
-			<li>About AIM</li>
+
+	<img class="col-12 asd" src="http://4.bp.blogspot.com/-wvvIGFRJacY/UgY9ldfAGNI/AAAAAAAAAAY/wVUltGX5_hk/s1600/aim+co..png" >
+	<div >
+		<ul class="col-12">
+			<a href="https://akosijeff.github.io/aimglobaljgm.html"><li>Home</li></a>
+			<a href="https://akosijeff.github.io/Products.html"><li>Products</li></a>
+			<a href=""><li>Team</li></a>
+			<a href=""><li>About AIM</li></a>
 		</ul>
 	</div>
-	<div style=" height: 100px">
-		<img src="http://4.bp.blogspot.com/-wvvIGFRJacY/UgY9ldfAGNI/AAAAAAAAAAY/wVUltGX5_hk/s1600/aim+co..png" style=" display: block; margin-left: auto; margin-right: auto; width: 600px;">
+	<div class="w3-content w3-display-container win col-12 frame">
+			<img class="asd mySlides w3-animate-right" src="https://i.ytimg.com/vi/-KunJOfvJ4A/maxresdefault.jpg" style="width:100%; height: 500px;">
+			<img  class="asd mySlides w3-animate-right" src="https://i.ytimg.com/vi/ryIRANS1dqw/maxresdefault.jpg" style="width:100%; height: 500px;">
+			<img  class="asd mySlides w3-animate-right" src="https://i.ytimg.com/vi/roKDxgexT9Y/maxresdefault.jpg" style="width:100%; height: 500px;">
+			<img  class="asd mySlides w3-animate-right" src="http://3.bp.blogspot.com/-RKhu-hloHNc/VfejxcuCjYI/AAAAAAAAAXM/8XZ3QXue7rY/s1600/1280x720-mdS.jpg" style="width:100%; height: 500px;">
+			<img  class="asd mySlides w3-animate-right" src="https://aimglobalhq-x98atpz.stackpathdns.com/wp-content/uploads/2016/02/Rodelizo-Gannaban-AIM-Global-Profit-Sharing.png" style="width:100%; height: 500px;">
+			<img  class="asd mySlides w3-animate-right" src="https://aimglobalhq-x98atpz.stackpathdns.com/jessieyutis/wp-content/uploads/sites/45/2016/02/Rodelizo-Gannaban-AIM-Global-Profit-Sharing-2015.png" style="width:100%; height: 500px;">
+			<img  class="asd mySlides w3-animate-right" src="https://iaimloyalshan.files.wordpress.com/2017/05/received_10210592558024756.jpeg" style="width:100%; height: 500px;">
+			<img  class="asd mySlides w3-animate-right" src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t1.0-9/34484507_1648883805228295_1243462524762849280_o.jpg?_nc_cat=0&_nc_eui2=AeFazKE3EhtHfTc0UOQ99y1IFvuLvWW-c3AfGWW8lYvLIUAunLssiuGuqvkou1T6J1U-iYb_e5qwnRdT8ASrRh0Cvm5Xos64Dx8RDj1718jv0A&oh=2008b4c9b94dbfc232feaaaeea22b974&oe=5BC27E3C" style="width:100%; height: 500px;">
+			<img  class="asd mySlides w3-animate-right" src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t1.0-9/34145530_10212131753353014_5436701553262067712_o.jpg?_nc_cat=0&_nc_eui2=AeEC7YPiW5Cnot_BFBQd-TFWmpxq76XhximTiSloW_0NB4eZwlj0MkEeGZrmJatmMCaoAwuOtQ_UnZk_bW50woF_1LH1FHlQVSNJEFB6t0xpoA&oh=f5139fbf63493cc5ebec8fb83197e797&oe=5BA3AE43" style="width:100%; height: 500px;">
+			<img  class="asd mySlides w3-animate-right" src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t1.0-9/34108668_509333199481495_6867904086444867584_n.jpg?_nc_cat=0&_nc_eui2=AeEl3m4YgxWyOL_vX_rvOTz1a15GDv9Dw19RbZk7aS-diQLpBEcYMDxrgLI2kiPSB-zbmN4n1lbZX1xUVbNwHkMRgLQHxVJ1QZiH29UysS_0aw&oh=b05127e220668758facddcbc068629ba&oe=5BA9906F" style="width:100%; height: 500px;">
+			<img  class="asd mySlides w3-animate-right" src="https://i.ytimg.com/vi/0rOnWInAGN0/maxresdefault.jpg" style="width:100%; height: 500px;">
+			<img  class="asd mySlides w3-animate-right" src="https://i.pinimg.com/originals/6c/8e/5a/6c8e5a0c09a244be62112e8b0d5ccfea.jpg" style="width:100%; height: 500px;">
+			<img  class="asd mySlides w3-animate-right" src="https://i.ytimg.com/vi/IucFU88_wAo/maxresdefault.jpg" style="width:100%; height: 500px;">
 	</div>
-	<video src="https://www.facebook.com/AIMGLOBALOFFICIALPAGE/videos/1224713477579758/?t=69"></video>
-	
-	<div class="w3-content w3-display-container win">
-			<img class="mySlides w3-animate-right" src="https://i.ytimg.com/vi/-KunJOfvJ4A/maxresdefault.jpg" style="width:100%; height: 500px;">
-			<img  class="mySlides w3-animate-right" src="https://i.ytimg.com/vi/ryIRANS1dqw/maxresdefault.jpg" style="width:100%; height: 500px;">
-			<img  class="mySlides w3-animate-right" src="https://i.ytimg.com/vi/roKDxgexT9Y/maxresdefault.jpg" style="width:100%; height: 500px;">
-			<img  class="mySlides w3-animate-right" src="http://3.bp.blogspot.com/-RKhu-hloHNc/VfejxcuCjYI/AAAAAAAAAXM/8XZ3QXue7rY/s1600/1280x720-mdS.jpg" style="width:100%; height: 500px;">
-			<img  class="mySlides w3-animate-right" src="https://aimglobalhq-x98atpz.stackpathdns.com/wp-content/uploads/2016/02/Rodelizo-Gannaban-AIM-Global-Profit-Sharing.png" style="width:100%; height: 500px;">
-			<img  class="mySlides w3-animate-right" src="https://aimglobalhq-x98atpz.stackpathdns.com/jessieyutis/wp-content/uploads/sites/45/2016/02/Rodelizo-Gannaban-AIM-Global-Profit-Sharing-2015.png" style="width:100%; height: 500px;">
-			<img  class="mySlides w3-animate-right" src="https://iaimloyalshan.files.wordpress.com/2017/05/received_10210592558024756.jpeg" style="width:100%; height: 500px;">
-			<img  class="mySlides w3-animate-right" src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t1.0-9/34484507_1648883805228295_1243462524762849280_o.jpg?_nc_cat=0&_nc_eui2=AeFazKE3EhtHfTc0UOQ99y1IFvuLvWW-c3AfGWW8lYvLIUAunLssiuGuqvkou1T6J1U-iYb_e5qwnRdT8ASrRh0Cvm5Xos64Dx8RDj1718jv0A&oh=2008b4c9b94dbfc232feaaaeea22b974&oe=5BC27E3C" style="width:100%; height: 500px;">
-			<img  class="mySlides w3-animate-right" src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t1.0-9/34145530_10212131753353014_5436701553262067712_o.jpg?_nc_cat=0&_nc_eui2=AeEC7YPiW5Cnot_BFBQd-TFWmpxq76XhximTiSloW_0NB4eZwlj0MkEeGZrmJatmMCaoAwuOtQ_UnZk_bW50woF_1LH1FHlQVSNJEFB6t0xpoA&oh=f5139fbf63493cc5ebec8fb83197e797&oe=5BA3AE43" style="width:100%; height: 500px;">
-			<img  class="mySlides w3-animate-right" src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t1.0-9/34108668_509333199481495_6867904086444867584_n.jpg?_nc_cat=0&_nc_eui2=AeEl3m4YgxWyOL_vX_rvOTz1a15GDv9Dw19RbZk7aS-diQLpBEcYMDxrgLI2kiPSB-zbmN4n1lbZX1xUVbNwHkMRgLQHxVJ1QZiH29UysS_0aw&oh=b05127e220668758facddcbc068629ba&oe=5BA9906F" style="width:100%; height: 500px;">
-			<img  class="mySlides w3-animate-right" src="https://i.ytimg.com/vi/0rOnWInAGN0/maxresdefault.jpg" style="width:100%; height: 500px;">
-			<img  class="mySlides w3-animate-right" src="https://i.pinimg.com/originals/6c/8e/5a/6c8e5a0c09a244be62112e8b0d5ccfea.jpg" style="width:100%; height: 500px;">
-			<img  class="mySlides w3-animate-right" src="https://i.ytimg.com/vi/IucFU88_wAo/maxresdefault.jpg" style="width:100%; height: 500px;">
+
+	<center class="col-12">
+		<h2 style="color: white; padding-top: 60px;">The Marketing Plan of Alliance in Motion Global</h2>
+		
+	</center>
+
+
+	<div class="frame">
+ 		<div class="embed">
+		<iframe src="https://www.youtube.com/embed/uoKE2eTovHM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+   
+		</div>
 	</div>
-	<iframe width="854" height="480" src="https://www.youtube.com/embed/uoKE2eTovHM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+
 	<footer>Exclusive only for <span><a href="https://www.facebook.com/jeffrey.mabborang.18007">JGM@17</a></span>AIMGlobal|2018</footer>
-	
 	<script>
 		var slideIndex = 0;
 		carousel();
-
+		var s=screen.width;
+		var s1=screen.height;
+		console.log(s);
+		console.log(s1);
+		var video=document.getElementsByTagName('iframe');
+		video.videoHeight = s;
+  		video.videoWidth = s1;
 		function carousel() {
 		    var i;
 		    var x = document.getElementsByClassName("mySlides");
@@ -55,15 +72,8 @@
 		    x[	slideIndex-=1].style.display = "block"; 
 			slideIndex+=1;
 		    setTimeout(carousel, 4000); // Change image every 2 seconds
-		}
-	</script>
 
+		}		
+	</script>
 </body>
 </html>
-
-
-
-
-
-
-
